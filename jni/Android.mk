@@ -1,0 +1,12 @@
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+
+CFLAGS := -O2 -Wall
+SRC_FILES := BulkPut.cpp
+
+LOCAL_MODULE := gl
+LOCAL_ARM_MODE := arm
+LOCAL_SRC_FILES := $(SRC_FILES)
+LOCAL_CFLAGS := $(CFLAGS)
+
+include $(BUILD_SHARED_LIBRARY)
